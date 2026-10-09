@@ -2,6 +2,8 @@
 
 Static, framework-free website for CoreVista Technologies, a planned internet cafe and business service center in Monrovia, Liberia.
 
+The public site is organized into separate pages: `index.html`, `services.html`, `technology.html`, `about.html`, `help.html`, `faq.html`, `contact.html`, `privacy.html`, and `404.html`.
+
 ## Preview locally
 
 From the project folder, run:
