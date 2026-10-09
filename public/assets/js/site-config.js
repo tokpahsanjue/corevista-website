@@ -4,6 +4,7 @@ window.COREVISTA_CONFIG = {
   location: "Monrovia, Liberia",
   launchStatus: "Preparing to launch",
   contact: { phone: "", whatsapp: "", email: "" },
+  social: { facebook: "https://web.facebook.com/profile.php?id=61569459090250" },
   futureServices: {
     webDevelopment: "Planned",
     graphicDesign: "Planned",

@@ -18,6 +18,13 @@
   function setupAvailability() {
     document.querySelectorAll("[data-service-status]").forEach(function (element) { element.textContent = (config.futureServices && config.futureServices[element.getAttribute("data-service-status")]) || "Planned"; });
   }
+  function setupSocialLinks() {
+    document.querySelectorAll("[data-social]").forEach(function (link) {
+      var value = config.social && config.social[link.getAttribute("data-social")];
+      if (!value) { link.hidden = true; return; }
+      link.hidden = false; link.href = value; link.target = "_blank"; link.rel = "noopener noreferrer";
+    });
+  }
   function setupForm() {
     var form = document.querySelector("#contact-form"), status = document.querySelector("#form-status");
     if (!form || !status) return;
@@ -35,5 +42,5 @@
     menu.querySelectorAll("a").forEach(function (link) { link.addEventListener("click", function () { menu.classList.remove("is-open"); button.setAttribute("aria-expanded", "false"); }); });
   }
   setText("[data-business-name]", config.businessName); setText("[data-tagline]", config.tagline); setText("[data-location]", config.location); setText("[data-launch-status]", config.launchStatus);
-  setupContactLinks(); setupAvailability(); setupMenu(); setupForm();
+  setupContactLinks(); setupAvailability(); setupSocialLinks(); setupMenu(); setupForm();
 }());
