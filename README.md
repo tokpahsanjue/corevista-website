@@ -2,14 +2,14 @@
 
 Static, framework-free website for CoreVista Technologies, a planned internet cafe and business service center in Monrovia, Liberia.
 
-The public site is organized into separate pages: `index.html`, `services.html`, `technology.html`, `about.html`, `help.html`, `faq.html`, `contact.html`, `privacy.html`, and `404.html`.
+The homepage is `index.html` in the project root. Supporting pages and assets remain in `public/`. The site pages are: `index.html`, `services.html`, `technology.html`, `about.html`, `help.html`, `faq.html`, `contact.html`, `privacy.html`, and `404.html`.
 
 ## Preview locally
 
 From the project folder, run:
 
 ```powershell
-py -m http.server 8080 --directory public
+py -m http.server 8080
 ```
 
 Open `http://localhost:8080`.
@@ -23,7 +23,7 @@ Edit `public/assets/js/site-config.js`. It contains public information only:
 - Change `futureServices` values to honest labels such as `Planned`, `Available` or `Paused`.
 - Change the location only when a public address is confirmed.
 
-Edit page copy in `public/index.html` and `public/privacy.html`. Styles are in `public/assets/css/styles.css`; enhancement behavior is in `public/assets/js/main.js`.
+Edit page copy in `index.html` and `public/privacy.html`. Styles are in `public/assets/css/styles.css`; enhancement behavior is in `public/assets/js/main.js`.
 
 ## GitHub
 
@@ -43,7 +43,7 @@ Keep private reference documents in `reference-private/`; `.gitignore` excludes 
 - Production branch: `main`
 - Framework preset: `None`
 - Build command: `exit 0`
-- Build output directory: `public`
+- Build output directory: `.` (project root)
 
 Do not add canonical URLs, sitemap URLs or structured business details until the final website address and relevant facts are confirmed. After publishing, update the repository, wait for the Pages build, and review the live URL at phone and desktop widths.
 
