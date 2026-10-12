@@ -1,6 +1,6 @@
 window.COREVISTA_CONFIG = {
   businessName: "CoreVista Technologies",
-  tagline: "Powering Systems. Enabling Vision. Delivering Solutions.",
+  tagline: "Technology for everyday business.",
   location: "Monrovia, Liberia",
   launchStatus: "Preparing to launch",
   contact: { phone: "", whatsapp: "", email: "" },
