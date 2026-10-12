@@ -18,11 +18,6 @@
   function setupAvailability() {
     document.querySelectorAll("[data-service-status]").forEach(function (element) { element.textContent = (config.futureServices && config.futureServices[element.getAttribute("data-service-status")]) || "Planned"; });
   }
-  function setupTechnologyServiceCopy() {
-    document.querySelectorAll(".future-card h3").forEach(function (heading) {
-      if (heading.textContent === "Digital marketing and SEO") heading.textContent = "Digital marketing and Content Creations";
-    });
-  }
   function setupSocialLinks() {
     document.querySelectorAll("[data-social]").forEach(function (link) {
       var value = config.social && config.social[link.getAttribute("data-social")];
@@ -84,5 +79,5 @@
     menu.querySelectorAll("a").forEach(function (link) { link.addEventListener("click", function () { menu.classList.remove("is-open"); button.setAttribute("aria-expanded", "false"); }); });
   }
   setText("[data-business-name]", config.businessName); setText("[data-tagline]", config.tagline); setText("[data-location]", config.location); setText("[data-launch-status]", config.launchStatus);
-  setupContactLinks(); setupAvailability(); setupTechnologyServiceCopy(); setupSocialLinks(); setupPageStyles(); setupFounderPortrait(); setupSoftwareCollage(); setupReveal(); setupMenu(); setupForm();
+  setupContactLinks(); setupAvailability(); setupSocialLinks(); setupPageStyles(); setupFounderPortrait(); setupSoftwareCollage(); setupReveal(); setupMenu(); setupForm();
 }());
